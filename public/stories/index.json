@@ -1,0 +1,23 @@
+[
+  {
+    "id": "nhung-nga-re",
+    "title": "Những Ngã Rẽ",
+    "description": "Mỗi quyết định là một hướng đi khác nhau trong hành trình trưởng thành.",
+    "covers": [
+      "/vn/bg/cauthang.png",
+      "/vn/bg/classroom_1.png",
+      "/vn/bg/classroom_2.png",
+      "/vn/bg/classroom_alt.jpg",
+      "/vn/bg/classroom.jpg",
+      "/vn/bg/congtruong.png",
+      "/vn/bg/cuaphonghocnhom.png",
+      "/vn/bg/hallway.jpg",
+      "/vn/bg/hanhlang_1.png",
+      "/vn/bg/hanhlang.png",
+      "/vn/bg/lockers.jpg",
+      "/vn/bg/phonghochom.png",
+      "/vn/bg/santhuong.png"
+    ],
+    "tags": ["Tương tác", "Lựa chọn", "Bài học"]
+  }
+]

@@ -1,0 +1,913 @@
+{
+  "id": "nhung-nga-re",
+  "title": "Những Ngã Rẽ",
+  "start": "s0_intro",
+  "meta": {
+    "version": "2.0",
+    "language": "vi",
+    "themes": [
+      "BLHD",
+      "người chứng kiến",
+      "đồng cảm",
+      "ranh giới",
+      "công lý phục hồi",
+      "cô lập tập thể",
+      "bạo lực mạng",
+      "chữa lành"
+    ],
+    "recommendedCast": ["nam", "lan", "minh", "hung", "sensei"]
+  },
+  "characters": {
+    "narr": { "name": "Người dẫn chuyện" },
+    "nam": { "name": "Nam" },
+    "lan": { "name": "Lan" },
+    "minh": { "name": "Minh" },
+    "hung": { "name": "Hùng" },
+    "sensei": { "name": "Cô giáo" }
+  },
+  "state": {
+    "flags": {
+      "sawFlashbackMinh": false,
+      "sawFlashbackHung": false,
+      "talkedToSensei": false,
+      "lanSteppedUp": false,
+      "namConfessedFear": false,
+      "savedEvidence": false,
+      "classAgreedRules": false,
+      "cyberReported": false
+    },
+    "stats": {
+      "courage": 0,
+      "empathy": 0,
+      "risk": 0,
+      "truth": 0
+    }
+  },
+  "scenes": [
+    {
+      "id": "s0_intro",
+      "bg": "/vn/bg/classroom.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Có những ngày lớp học trông yên ổn đến mức người ta quên mất: yên ổn không có nghĩa là an toàn." },
+        { "speaker": "narr", "text": "Bạo lực không luôn ồn ào. Đôi khi, nó chỉ là ánh mắt tránh đi đúng lúc." },
+        { "speaker": "nam", "emotion": "neutral", "position": "left", "text": "(Nội tâm) Hôm nay… lớp sáng quá. Mà lòng mình tối." },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Nam, nhìn mặt cậu kìa… có chuyện gì không?" },
+        { "speaker": "nam", "emotion": "confused", "position": "left", "text": "Không biết. Chỉ là… tớ thấy như sắp có thứ gì đó rơi xuống." },
+        { "speaker": "narr", "text": "Ở bàn cuối, Minh cúi đầu. Không ai chửi Minh. Không ai đánh Minh. Nhưng cũng không ai ngồi cạnh Minh." }
+      ],
+      "next": "s1_before_recess"
+    },
+
+    {
+      "id": "s1_before_recess",
+      "bg": "/vn/bg/classroom_alt.jpg",
+      "lines": [
+        { "speaker": "minh", "emotion": "worried", "position": "right", "text": "Nam… giờ ra chơi… đừng để tớ ra ngoài một mình." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Minh, sao lại nói vậy?" },
+        { "speaker": "minh", "emotion": "helpless", "position": "right", "text": "Không có gì… chỉ là… tớ mệt." },
+        { "speaker": "lan", "emotion": "hesitate", "position": "center", "text": "(Nội tâm) Minh mệt… nhưng mệt kiểu sợ. Kiểu muốn biến mất." },
+        { "speaker": "narr", "text": "Một câu 'đừng để tớ một mình' nghe giống xin giúp đỡ. Nhưng đôi khi nó là lời báo trước." }
+      ],
+      "next": "s2_yard_start"
+    },
+
+    {
+      "id": "s2_yard_start",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Công trường. Gió thổi qua hàng rào. Tiếng cười của người khác vang lên như thứ không thuộc về Minh." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "(Nội tâm) Mình từng nghĩ: chỉ cần không tham gia là đủ. Nhưng không tham gia… có khi là đứng về phía mạnh hơn." },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Minh đứng sát vào trong đi. Chỗ này đông." },
+        { "speaker": "minh", "emotion": "scared", "position": "center", "text": "Tớ… tớ nghe tiếng bước chân." }
+      ],
+      "next": "s3_hung_enters"
+    },
+
+    {
+      "id": "s3_hung_enters",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "hung", "emotion": "smirk", "position": "center", "text": "Ơ. Minh đây rồi." },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Hôm nay không trốn hả? Tưởng biến mất luôn chứ." },
+        { "speaker": "minh", "emotion": "scared", "position": "right", "text": "Hùng… dừng lại." },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Dừng gì? Có ai làm gì đâu." },
+        { "speaker": "hung", "emotion": "smirk", "position": "center", "text": "Hay là… tự thấy mình phiền?" },
+        { "speaker": "lan", "emotion": "hesitate", "position": "left", "text": "(Nội tâm) Mình thấy Minh run. Mình cũng run. Nhưng run vì sợ bị dính vào." },
+        { "speaker": "narr", "text": "Khoảnh khắc này rất ngắn. Nhưng nó định nghĩa người ta lâu." }
+      ],
+      "choices": [
+        {
+          "text": "Can thiệp ngay: đứng chắn trước Minh",
+          "effects": { "stats": { "courage": 2, "risk": 1 } },
+          "next": "s4_intervene"
+        },
+        {
+          "text": "Kéo Lan: 'Đi gọi cô giáo' (an toàn + đúng quy trình)",
+          "effects": { "stats": { "truth": 1, "courage": 1 }, "flags": { "talkedToSensei": true } },
+          "next": "s4_call_sensei"
+        },
+        {
+          "text": "Đứng im… hy vọng Hùng tự chán",
+          "effects": { "stats": { "risk": 2 }, "flags": { "namConfessedFear": true } },
+          "next": "s4_freeze"
+        }
+      ]
+    },
+
+    {
+      "id": "s4_intervene",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Hùng. Dừng lại." },
+        { "speaker": "hung", "emotion": "surprise", "position": "center", "text": "Ồ. Nam?" },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Hôm nay đóng vai anh hùng hả?" },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "(Nội tâm) Tim đập như bị ai gõ. Mình không mạnh. Mình chỉ… không muốn lùi nữa." },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Nam… coi chừng…" },
+        { "speaker": "narr", "text": "Can thiệp không phải một cú đấm. Can thiệp là đứng lại khi bản năng muốn bỏ chạy." }
+      ],
+      "choices": [
+        {
+          "text": "Giữ bình tĩnh: nói rõ ràng, không khiêu khích",
+          "effects": { "stats": { "truth": 2, "risk": -1 } },
+          "next": "s5_deescalate"
+        },
+        {
+          "text": "Bật lại gay gắt (đẩy xung đột lên cao)",
+          "effects": { "stats": { "risk": 2, "courage": 1 } },
+          "next": "s5_escalate"
+        }
+      ]
+    },
+
+    {
+      "id": "s4_call_sensei",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Lan, đi gọi cô. Nhanh!" },
+        { "speaker": "lan", "emotion": "hesitate", "position": "right", "text": "Nếu gọi cô… họ sẽ bảo tụi mình 'mách lẻo'…" },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Bảo vệ không phải mách lẻo. Bảo vệ là trách nhiệm." },
+        { "speaker": "narr", "text": "Lan chạy. Nam ở lại. Một mình đối diện cái nhìn của Hùng." },
+        { "speaker": "hung", "emotion": "smirk", "position": "center", "text": "Gọi người lớn à? Thế là chơi kiểu đó hả?" }
+      ],
+      "next": "s6_hold_line"
+    },
+
+    {
+      "id": "s4_freeze",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Nam đứng im. Không phải vì đồng ý. Chỉ là cơ thể từ chối cử động." },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "(Nội tâm) Mình ghét bản thân. Sao mình không nói nổi một câu?" },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Nam…?" },
+        { "speaker": "minh", "emotion": "sad", "position": "center", "text": "Không sao… tớ quen rồi." },
+        { "speaker": "narr", "text": "Câu 'tớ quen rồi' không đánh vào da. Nó đánh vào phần người ta cố giấu." }
+      ],
+      "choices": [
+        {
+          "text": "Đuổi theo Minh khi Minh bỏ chạy (sửa sai)",
+          "effects": { "stats": { "empathy": 2, "courage": 1 } },
+          "next": "s7_follow_minh"
+        },
+        {
+          "text": "Ở lại đối diện Hùng (dù sợ) để chặn lại",
+          "effects": { "stats": { "courage": 1, "risk": 1 } },
+          "next": "s6_hold_line"
+        }
+      ]
+    },
+
+    {
+      "id": "s5_deescalate",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Hùng. Minh sợ thật đấy." },
+        { "speaker": "hung", "emotion": "smirk", "position": "center", "text": "Sợ thì mạnh lên. Đời có ai chiều đâu." },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Không phải ai cũng chịu được kiểu 'mạnh' như vậy." },
+        { "speaker": "narr", "text": "Hùng chớp mắt. Rất nhanh. Như thể có điều gì mắc lại trong cổ." }
+      ],
+      "choices": [
+        {
+          "text": "Hỏi thẳng: 'Cậu đang bực chuyện gì?' (mở chiều sâu)",
+          "effects": { "stats": { "truth": 2, "empathy": 1 }, "flags": { "sawFlashbackHung": true } },
+          "next": "s8_hung_crack"
+        },
+        {
+          "text": "Ưu tiên an toàn: kéo Minh rời đi",
+          "effects": { "stats": { "risk": -1, "courage": 1 } },
+          "next": "s9_escape_to_hall"
+        }
+      ]
+    },
+
+    {
+      "id": "s5_escalate",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Cậu nghĩ làm người khác sợ là mạnh à? Không. Đó là hèn." },
+        { "speaker": "hung", "emotion": "angry", "position": "center", "text": "Mày nói lại xem?" },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Nam, đừng kích!" },
+        { "speaker": "narr", "text": "Đám đông bắt đầu tụ lại. Và đám đông là thứ làm bạo lực tự tin." }
+      ],
+      "choices": [
+        {
+          "text": "Hạ giọng, lùi 1 bước (giữ người trước)",
+          "effects": { "stats": { "truth": 1, "risk": -1 } },
+          "next": "s6_hold_line"
+        },
+        {
+          "text": "Tiếp tục đối đầu (nguy cơ bùng phát)",
+          "effects": { "stats": { "risk": 3 } },
+          "next": "s10_blowup"
+        }
+      ]
+    },
+
+    {
+      "id": "s6_hold_line",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Nam đứng giữa Minh và Hùng. Không phải anh hùng. Chỉ là một người quyết định không quay mặt." },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Mày làm gì? Định làm cảnh à?" },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Tớ không muốn đánh nhau." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Nhưng tớ cũng không để cậu kéo Minh đi." },
+        { "speaker": "lan", "emotion": "hesitate", "position": "right", "text": "(Nội tâm) Nếu mình im… mình cũng góp phần." }
+      ],
+      "choices": [
+        {
+          "text": "Lan lên tiếng công khai (người chứng kiến bước ra)",
+          "effects": { "stats": { "courage": 2, "truth": 1 }, "flags": { "lanSteppedUp": true } },
+          "next": "s11_lan_steps_up"
+        },
+        {
+          "text": "Chờ cô giáo tới (đúng quy trình)",
+          "effects": { "stats": { "truth": 1, "risk": -1 }, "flags": { "talkedToSensei": true } },
+          "next": "s12_sensei_arrives"
+        }
+      ]
+    },
+
+    {
+      "id": "s7_follow_minh",
+      "bg": "/vn/bg/hallway.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Minh chạy vào hành lang. Tiếng bước chân gấp như trốn khỏi một thứ vô hình." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Minh! Đợi!" },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Đừng theo… theo tớ cậu cũng bị ghét." },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "Tớ đã ghét bản thân vì không làm gì. Tớ không muốn lặp lại." },
+        { "speaker": "narr", "text": "Minh nhìn Nam. Trong mắt Minh có thứ vừa như cầu xin, vừa như xin lỗi." }
+      ],
+      "choices": [
+        {
+          "text": "Hỏi: 'Chuyện bắt đầu từ khi nào?' (mở hồi tưởng Minh)",
+          "effects": { "stats": { "empathy": 2, "truth": 2 }, "flags": { "sawFlashbackMinh": true } },
+          "next": "s13_flashback_minh"
+        },
+        {
+          "text": "Đưa Minh tới nơi an toàn (phòng học nhóm)",
+          "effects": { "stats": { "courage": 1, "risk": -1 }, "flags": { "talkedToSensei": true } },
+          "next": "s14_safe_room"
+        }
+      ]
+    },
+
+    {
+      "id": "s8_hung_crack",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tớ hỏi thật. Cậu đang bực chuyện gì?" },
+        { "speaker": "hung", "emotion": "surprise", "position": "center", "text": "…Hả?" },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Mày tưởng mày hiểu tao à?" },
+        { "speaker": "narr", "text": "Một câu hỏi đúng lúc có thể làm nứt cái vỏ dày nhất. Không phải để tha thứ. Để nhìn thấy." }
+      ],
+      "choices": [
+        {
+          "text": "Đào sâu: 'Cậu có từng bị ai làm vậy không?'",
+          "effects": { "stats": { "empathy": 2, "truth": 1 }, "flags": { "sawFlashbackHung": true } },
+          "next": "s15_flashback_hung"
+        },
+        {
+          "text": "Không đào sâu, ưu tiên đưa Minh đi",
+          "effects": { "stats": { "risk": -1, "courage": 1 } },
+          "next": "s9_escape_to_hall"
+        }
+      ]
+    },
+
+    {
+      "id": "s9_escape_to_hall",
+      "bg": "/vn/bg/hanhlang.png",
+      "lines": [
+        { "speaker": "narr", "text": "Nam kéo Minh rời khỏi đám đông. Không phải trốn. Là chọn sống." },
+        { "speaker": "minh", "emotion": "scared", "position": "right", "text": "Hùng sẽ trả thù…" },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Nếu im… nó không dừng. Nếu làm đúng… ít nhất Minh không một mình." },
+        { "speaker": "lan", "emotion": "worried", "position": "center", "text": "Tớ đi cùng. Nhưng tớ cũng sợ." },
+        { "speaker": "narr", "text": "Sợ không phải lý do để bỏ mặc. Sợ là tín hiệu để tìm đồng minh." }
+      ],
+      "next": "s14_safe_room"
+    },
+
+    {
+      "id": "s10_blowup",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Chỉ một câu nữa là đủ để mọi thứ nổ tung." },
+        { "speaker": "hung", "emotion": "angry", "position": "center", "text": "Tao cho mày biết tay!" },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Dừng lại! Có ai… gọi cô chưa?!" },
+        { "speaker": "narr", "text": "Trong đám đông, có người giơ điện thoại. Và đôi khi, bạo lực còn sống nhờ lượt xem." }
+      ],
+      "choices": [
+        {
+          "text": "Nói lớn: 'Dừng lại! Có camera đó!' (hạ nhiệt)",
+          "effects": { "stats": { "truth": 1, "risk": -1 } },
+          "next": "s12_sensei_arrives"
+        },
+        {
+          "text": "Kéo Minh chạy ngay (ưu tiên an toàn)",
+          "effects": { "stats": { "risk": -1, "courage": 1 } },
+          "next": "s14_safe_room"
+        }
+      ]
+    },
+
+    {
+      "id": "s11_lan_steps_up",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "lan", "emotion": "talk", "position": "right", "text": "Hùng. Dừng lại." },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Nếu cậu tiếp tục… tớ sẽ nói với cô. Và tớ sẽ đứng làm chứng." },
+        { "speaker": "narr", "text": "Câu 'tớ sẽ làm chứng' làm đám đông im bặt. Vì sự thật không còn là tin đồn." },
+        { "speaker": "hung", "emotion": "surprise", "position": "center", "text": "Mày dám?" },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Lan… cảm ơn." }
+      ],
+      "next": "s12_sensei_arrives"
+    },
+
+    {
+      "id": "s12_sensei_arrives",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "angry", "position": "center", "text": "Dừng lại. Các em đang làm gì?" },
+        { "speaker": "hung", "emotion": "talk", "position": "left", "text": "Có gì đâu cô, tụi em giỡn thôi." },
+        { "speaker": "minh", "emotion": "scared", "position": "right", "text": "…" },
+        { "speaker": "narr", "text": "Có những lần nạn nhân không nói. Không phải vì không có gì để nói. Mà vì sợ hậu quả." }
+      ],
+      "choices": [
+        {
+          "text": "Nam nói rõ sự việc (đặt sự thật lên bàn)",
+          "effects": { "stats": { "truth": 2, "courage": 1 }, "flags": { "talkedToSensei": true } },
+          "next": "s16_to_teacher_room"
+        },
+        {
+          "text": "Lan nói thay Minh (bảo vệ Minh)",
+          "effects": { "stats": { "truth": 2, "empathy": 1 }, "flags": { "talkedToSensei": true, "lanSteppedUp": true } },
+          "next": "s16_to_teacher_room"
+        },
+        {
+          "text": "Im lặng vì sợ (nhưng câu chuyện không dừng)",
+          "effects": { "stats": { "risk": 2 } },
+          "next": "s17_silence_cost"
+        }
+      ]
+    },
+
+    {
+      "id": "s13_flashback_minh",
+      "bg": "/vn/bg/classroom_2.png",
+      "lines": [
+        { "speaker": "narr", "text": "Hồi tưởng." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Ban đầu chỉ là vài câu trêu." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Rồi thành biệt danh. Rồi giấu đồ. Rồi… đẩy tớ trước mặt mọi người." },
+        { "speaker": "minh", "emotion": "cry", "position": "right", "text": "Tớ cười… để họ nghĩ tớ ổn. Nhưng càng cười… tớ càng cô đơn." },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "(Nội tâm) Mình ở đó. Mình nhìn thấy. Mình… đã chọn yên." },
+        { "speaker": "narr", "text": "Không phải ai làm tổn thương cũng cầm dao. Có người làm tổn thương bằng cách quay đi." }
+      ],
+      "choices": [
+        {
+          "text": "Nam xin lỗi Minh (đối diện sự thật)",
+          "effects": { "stats": { "truth": 2, "empathy": 2 }, "flags": { "namConfessedFear": true } },
+          "next": "s14_safe_room"
+        },
+        {
+          "text": "Nam không xin lỗi dài, chỉ nói: 'Từ giờ tớ đứng cạnh'",
+          "effects": { "stats": { "courage": 2, "empathy": 1 } },
+          "next": "s14_safe_room"
+        }
+      ]
+    },
+
+    {
+      "id": "s14_safe_room",
+      "bg": "/vn/bg/cuaphonghocnhom.png",
+      "lines": [
+        { "speaker": "narr", "text": "Cửa phòng học nhóm khép lại. Bên ngoài là tiếng người. Bên trong là tiếng thở." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Tớ sợ… nếu tớ nói… ngày mai sẽ tệ hơn." },
+        { "speaker": "lan", "emotion": "worried", "position": "center", "text": "Tớ cũng sợ. Nhưng mình có thể sợ… và vẫn làm đúng." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Mình không tự xử. Mình làm theo cách an toàn: có cô, có bằng chứng, có người đi cùng." },
+        { "speaker": "narr", "text": "Trong phòng nhỏ, ba người học một điều: can đảm không phải đứng một mình." }
+      ],
+      "choices": [
+        {
+          "text": "Đi gặp cô giáo ngay (đúng quy trình)",
+          "effects": { "stats": { "truth": 2 }, "flags": { "talkedToSensei": true } },
+          "next": "s16_to_teacher_room"
+        },
+        {
+          "text": "Thu thập chứng cứ trước (ghi lại thời gian, nhân chứng)",
+          "effects": { "stats": { "truth": 1 }, "flags": { "savedEvidence": true } },
+          "next": "s15_collect_evidence"
+        }
+      ]
+    },
+
+    {
+      "id": "s15_flashback_hung",
+      "bg": "/vn/bg/hanhlang_1.png",
+      "lines": [
+        { "speaker": "narr", "text": "Hồi tưởng." },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Ở nhà… tao cũng bị gọi là vô dụng." },
+        { "speaker": "hung", "emotion": "angry", "position": "center", "text": "Nếu tao không mạnh, tao bị chà lên." },
+        { "speaker": "narr", "text": "Hùng học cách tàn nhẫn như học cách thở. Nhưng tàn nhẫn không làm vết thương biến mất—nó chỉ đổi chỗ." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "(Nội tâm) Điều này không bào chữa. Nhưng nó giải thích." },
+        { "speaker": "lan", "emotion": "sad", "position": "right", "text": "(Nội tâm) Không ai sinh ra đã muốn làm kẻ xấu." }
+      ],
+      "next": "s18_back_to_now"
+    },
+
+    {
+      "id": "s15_collect_evidence",
+      "bg": "/vn/bg/lockers.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Tủ đồ. Những nơi tưởng vô hại lại là nơi chuyện xấu hay xảy ra." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Mình ghi lại: thời gian, câu nói, ai chứng kiến." },
+        { "speaker": "lan", "emotion": "talk", "position": "right", "text": "Không phải để trả thù. Để bảo vệ." },
+        { "speaker": "minh", "emotion": "sad", "position": "center", "text": "Nếu họ biết tớ ghi… họ sẽ càng ghét." },
+        { "speaker": "narr", "text": "Sự thật đôi khi nguy hiểm. Nhưng không có sự thật, nạn nhân chỉ còn một mình với nỗi sợ." }
+      ],
+      "next": "s16_to_teacher_room"
+    },
+
+    {
+      "id": "s16_to_teacher_room",
+      "bg": "/vn/bg/cuaphonghocnhom.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "concerned", "position": "center", "text": "Các em bình tĩnh. Kể cho cô nghe từ đầu." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô cần sự thật. Và cô cần các em an toàn." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Cô ơi… em sợ…" },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tụi em không muốn đánh nhau. Tụi em chỉ muốn Minh được yên." },
+        { "speaker": "narr", "text": "Khi người lớn biết lắng nghe, 'mách' biến thành 'bảo vệ'." }
+      ],
+      "next": "s19_sensei_question"
+    },
+
+    {
+      "id": "s17_silence_cost",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Im lặng không làm bạo lực biến mất. Nó chỉ làm bạo lực tự tin hơn." },
+        { "speaker": "hung", "emotion": "smirk", "position": "center", "text": "Thấy chưa? Có ai dám nói gì đâu." },
+        { "speaker": "minh", "emotion": "cry", "position": "right", "text": "…" },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "(Nội tâm) Mình vừa chọn đường dễ… và nó đang đòi giá." }
+      ],
+      "choices": [
+        {
+          "text": "Sửa sai ngay: chạy đi tìm cô giáo",
+          "effects": { "stats": { "courage": 2, "truth": 1 }, "flags": { "talkedToSensei": true } },
+          "next": "s16_to_teacher_room"
+        },
+        {
+          "text": "Đuổi theo Minh (giữ Minh trước, rồi mới báo)",
+          "effects": { "stats": { "empathy": 2 }, "flags": { "sawFlashbackMinh": true } },
+          "next": "s7_follow_minh"
+        }
+      ]
+    },
+
+    {
+      "id": "s18_back_to_now",
+      "bg": "/vn/bg/congtruong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Trở lại hiện tại." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Hùng. Dù cậu có đau, cậu cũng không có quyền biến người khác thành chỗ xả." },
+        { "speaker": "hung", "emotion": "angry", "position": "center", "text": "…" },
+        { "speaker": "lan", "emotion": "worried", "position": "right", "text": "Dừng lại đi. Mọi người… cũng đang nhìn đó." },
+        { "speaker": "narr", "text": "Ranh giới không phải để đánh nhau. Ranh giới để không ai bị đẩy xuống." }
+      ],
+      "next": "s12_sensei_arrives"
+    },
+
+    {
+      "id": "s19_sensei_question",
+      "bg": "/vn/bg/cuaphonghocnhom.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô sẽ xử lý theo quy trình. Nhưng cô muốn hỏi: các em muốn chuyện này kết thúc theo cách nào?" },
+        { "speaker": "narr", "text": "Có công lý kiểu trừng phạt. Có công lý kiểu phục hồi. Và có sự im lặng—không phải công lý." }
+      ],
+      "choices": [
+        {
+          "text": "Kỷ luật nghiêm (răn đe ngay)",
+          "effects": { "stats": { "truth": 1, "risk": 1 } },
+          "next": "s20_path_discipline"
+        },
+        {
+          "text": "Phục hồi (tư vấn, cam kết, giám sát)",
+          "effects": { "stats": { "empathy": 2, "truth": 1 } },
+          "next": "s21_path_restorative"
+        },
+        {
+          "text": "Bảo vệ Minh trước (giữ kín danh tính, bố trí an toàn)",
+          "effects": { "stats": { "risk": -1, "truth": 1 } },
+          "next": "s22_path_protection"
+        }
+      ]
+    },
+
+    {
+      "id": "s20_path_discipline",
+      "bg": "/vn/bg/classroom_1.png",
+      "lines": [
+        { "speaker": "narr", "text": "Một tuần sau." },
+        { "speaker": "narr", "text": "Kỷ luật làm hành vi dừng lại… nhưng dư âm vẫn nằm trong ánh mắt." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Em… vẫn sợ ngày mai." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô sẽ theo sát để không có trả thù. Nhưng các em cũng phải đi cùng Minh." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tụi em sẽ không để Minh một mình nữa." }
+      ],
+      "next": "s23_isolation_start"
+    },
+
+    {
+      "id": "s21_path_restorative",
+      "bg": "/vn/bg/classroom_1.png",
+      "lines": [
+        { "speaker": "narr", "text": "Một tuần sau." },
+        { "speaker": "narr", "text": "Không có buổi 'chỉ mặt'. Có một chuỗi việc: gặp phụ huynh, tư vấn tâm lý, cam kết, giám sát." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Phục hồi không bỏ qua lỗi. Phục hồi bắt người gây lỗi nhìn thấy hậu quả và học cách sửa." },
+        { "speaker": "lan", "emotion": "talk", "position": "right", "text": "Nếu có buổi đối thoại… tớ muốn tham gia. Tớ muốn nói tớ đã im lặng thế nào." }
+      ],
+      "next": "s24_restorative_circle"
+    },
+
+    {
+      "id": "s22_path_protection",
+      "bg": "/vn/bg/classroom_1.png",
+      "lines": [
+        { "speaker": "narr", "text": "Một tuần sau." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô sắp xếp chỗ ngồi, điểm trực, và người đi cùng. Minh không cần 'mạnh lên' để tồn tại." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Em… cảm ơn cô. Em chỉ muốn được thở." },
+        { "speaker": "narr", "text": "Bảo vệ không hèn. Bảo vệ là tạo điều kiện để nạn nhân sống lại nhịp bình thường." }
+      ],
+      "next": "s23_isolation_start"
+    },
+
+    {
+      "id": "s23_isolation_start",
+      "bg": "/vn/bg/classroom.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Hai ngày sau." },
+        { "speaker": "narr", "text": "Không ai đánh Minh. Không ai chửi Minh. Nhưng mọi người… né Minh." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "(Nội tâm) Lúc bị trêu đau một. Lúc bị né… đau mười." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Minh, trưa nay ăn với tụi tớ nhé." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Cậu không sợ bị dính vào sao?" },
+        { "speaker": "lan", "emotion": "worried", "position": "center", "text": "Sợ. Nhưng nếu ai cũng sợ… Minh sẽ ở một mình mãi." }
+      ],
+      "choices": [
+        {
+          "text": "Ngồi cạnh Minh công khai (đối đầu sự né tránh)",
+          "effects": { "stats": { "courage": 2, "risk": 1, "empathy": 1 } },
+          "next": "s25_public_table"
+        },
+        {
+          "text": "Kéo Minh ra góc vắng (an toàn trước, nhưng cô lập dễ kéo dài)",
+          "effects": { "stats": { "risk": -1, "empathy": 1 } },
+          "next": "s26_quiet_corner"
+        },
+        {
+          "text": "Nhờ cô tổ chức hoạt động lớp (giải pháp hệ thống)",
+          "effects": { "stats": { "truth": 2 }, "flags": { "classAgreedRules": true } },
+          "next": "s27_request_class_circle"
+        }
+      ]
+    },
+
+    {
+      "id": "s24_restorative_circle",
+      "bg": "/vn/bg/classroom_alt.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Một vòng đối thoại phục hồi. Không ai được la hét. Không ai được chối bỏ." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Mỗi người nói một điều: mình đã thấy gì, và điều đó làm mình cảm thấy thế nào." },
+        { "speaker": "lan", "emotion": "sad", "position": "left", "text": "Tớ đã im lặng vì sợ. Và tớ hối hận." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Tớ không muốn ai ghét tớ… nhưng tớ cũng không muốn sống như vậy nữa." },
+        { "speaker": "hung", "emotion": "talk", "position": "center", "text": "Tao… tao đã làm quá." },
+        { "speaker": "narr", "text": "Một câu 'xin lỗi' không xóa tất cả. Nhưng có thể là viên gạch đầu tiên của cây cầu." }
+      ],
+      "next": "s23_isolation_start"
+    },
+
+    {
+      "id": "s25_public_table",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "narr", "text": "Buổi trưa. Không có căng-tin trong bối cảnh, nhưng có một khoảng trống giống hệt: bàn trống." },
+        { "speaker": "narr", "text": "Trong phòng học hôm, ánh sáng rơi lên bàn như một câu hỏi: 'Ai sẽ ngồi cạnh Minh?'" },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Minh ngồi đây." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Ai muốn ngồi thì ngồi chung." },
+        { "speaker": "hung", "emotion": "smirk", "position": "right", "text": "Ôi, nhóm 'bảo vệ người yếu' kìa." },
+        { "speaker": "minh", "emotion": "scared", "position": "center", "text": "(Nội tâm) Mình vừa muốn biến mất… vừa muốn được ở lại." }
+      ],
+      "choices": [
+        { "text": "Nam đáp lại bằng sự bình tĩnh (giữ phẩm giá)", "effects": { "stats": { "truth": 1 } }, "next": "s28_dignity_reply" },
+        { "text": "Lan nói công khai (người chứng kiến bước ra)", "effects": { "stats": { "courage": 1 }, "flags": { "lanSteppedUp": true } }, "next": "s29_lan_statement" },
+        { "text": "Minh tự lên tiếng (một bước nhỏ nhưng rất lớn)", "effects": { "stats": { "courage": 1, "empathy": 1 } }, "next": "s30_minh_first_voice" }
+      ]
+    },
+
+    {
+      "id": "s26_quiet_corner",
+      "bg": "/vn/bg/hallway.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Một góc hành lang vắng." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Cảm ơn… nhưng tớ sợ cậu giúp tớ… rồi cậu mất bạn." },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "(Nội tâm) Mình sợ bị tách khỏi nhóm. Nhưng mình sợ nhất là trở thành người vô cảm." },
+        { "speaker": "lan", "emotion": "hesitate", "position": "center", "text": "(Nội tâm) Mình luôn đứng giữa: an toàn của mình và nỗi đau của người khác." }
+      ],
+      "choices": [
+        {
+          "text": "Nam thú nhận nỗi sợ (xây niềm tin thật)",
+          "effects": { "stats": { "truth": 2, "empathy": 1 }, "flags": { "namConfessedFear": true } },
+          "next": "s31_confess_fear"
+        },
+        {
+          "text": "Đề nghị 'buddy system' (không ai đi một mình)",
+          "effects": { "stats": { "empathy": 2 }, "flags": { "classAgreedRules": true } },
+          "next": "s32_buddy_system"
+        }
+      ]
+    },
+
+    {
+      "id": "s27_request_class_circle",
+      "bg": "/vn/bg/cuaphonghocnhom.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô đồng ý làm một buổi sinh hoạt lớp." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Nhưng cô sẽ không biến nó thành buổi 'chỉ mặt đặt tên'. Cô muốn các em hiểu cảm xúc và hậu quả." },
+        { "speaker": "narr", "text": "Một lớp học không chỉ có điểm số. Nó có khí hậu tinh thần." }
+      ],
+      "next": "s33_class_circle"
+    },
+
+    {
+      "id": "s28_dignity_reply",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Hùng, cậu có thể cười. Nhưng tớ không thấy việc khiến người khác sợ là vui." },
+        { "speaker": "hung", "emotion": "talk", "position": "right", "text": "Mày nói như thánh." },
+        { "speaker": "nam", "emotion": "worried", "position": "left", "text": "Không. Tớ cũng sợ. Nhưng tớ đang học cách không để nỗi sợ ra lệnh." },
+        { "speaker": "narr", "text": "Đám đông im lại một chút. 'Im' không phải đồng ý. Nhưng là… bắt đầu nghe." }
+      ],
+      "next": "s27_request_class_circle"
+    },
+
+    {
+      "id": "s29_lan_statement",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Tớ từng im lặng vì sợ. Nhưng tớ nhận ra: im lặng làm người xấu mạnh hơn." },
+        { "speaker": "lan", "emotion": "worried", "position": "center", "text": "Nếu ai đó bị cô lập, bị trêu, bị dồn ép… tụi mình làm như không thấy… là tụi mình góp phần." },
+        { "speaker": "narr", "text": "Một câu nói công khai không sửa mọi thứ. Nhưng nó mở một chuẩn mực mới." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "(Nội tâm) Mình không ngờ… có người dám nói vì mình." }
+      ],
+      "next": "s27_request_class_circle"
+    },
+
+    {
+      "id": "s30_minh_first_voice",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "minh", "emotion": "talk", "position": "center", "text": "Tớ… tớ không muốn chiến thắng ai cả." },
+        { "speaker": "minh", "emotion": "sad", "position": "center", "text": "Tớ chỉ muốn… được đi học như mọi người." },
+        { "speaker": "narr", "text": "Một câu nói không cần mạnh. Nó chỉ cần thật." }
+      ],
+      "next": "s27_request_class_circle"
+    },
+
+    {
+      "id": "s31_confess_fear",
+      "bg": "/vn/bg/hallway.jpg",
+      "lines": [
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tớ sợ bị ghét. Sợ bị kéo vào." },
+        { "speaker": "nam", "emotion": "sad", "position": "left", "text": "Nhưng tớ sợ nhất là… một ngày tớ quen với việc nhìn người khác đau." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "Cậu nói vậy… làm tớ thấy tớ không còn một mình." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Vậy mình làm theo cách an toàn. Có kế hoạch. Có người lớn. Không liều." }
+      ],
+      "next": "s27_request_class_circle"
+    },
+
+    {
+      "id": "s32_buddy_system",
+      "bg": "/vn/bg/classroom_alt.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Lan đề xuất: 'buddy system' — không ai phải ăn một mình, không ai phải đi một mình ở nơi dễ bị nhắm." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Không cần ai làm anh hùng. Chỉ cần ai đó ở cạnh." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Tớ… muốn thử." }
+      ],
+      "next": "s33_class_circle"
+    },
+
+    {
+      "id": "s33_class_circle",
+      "bg": "/vn/bg/classroom.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Buổi sinh hoạt lớp." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Mỗi bạn viết 1 câu: 'Khi bị trêu, mình cảm thấy…' rồi gấp lại." },
+        { "speaker": "narr", "text": "Những mảnh giấy được đọc lên. Không ai biết của ai." },
+        { "speaker": "narr", "text": "\"Mình thấy mình vô giá trị.\" — \"Mình muốn bỏ học.\" — \"Mình sợ mỗi giờ ra chơi.\"" },
+        { "speaker": "lan", "emotion": "sad", "position": "left", "text": "(Nội tâm) Hóa ra im lặng của mình từng làm người khác tưởng: họ cô đơn thật." },
+        { "speaker": "nam", "emotion": "worried", "position": "right", "text": "(Nội tâm) Không ai đáng bị biến thành trò tiêu khiển." }
+      ],
+      "choices": [
+        { "text": "Cả lớp thống nhất 'quy ước an toàn' (hệ thống)", "effects": { "flags": { "classAgreedRules": true }, "stats": { "truth": 2 } }, "next": "s34_class_rules" },
+        { "text": "Mời Minh chia sẻ (mạnh nhưng rủi ro)", "effects": { "stats": { "courage": 1, "risk": 1, "empathy": 1 } }, "next": "s35_minh_shares" },
+        { "text": "Mời Hùng phản hồi (căng nhưng có thể mở nút)", "effects": { "stats": { "truth": 1, "risk": 1 } }, "next": "s36_hung_response" }
+      ]
+    },
+
+    {
+      "id": "s34_class_rules",
+      "bg": "/vn/bg/classroom_1.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Lớp mình thống nhất 3 quy ước: Không cô lập. Không bêu xấu. Thấy sai—báo người lớn." },
+        { "speaker": "lan", "emotion": "talk", "position": "left", "text": "Và 'buddy system': không để ai ăn trưa một mình." },
+        { "speaker": "narr", "text": "Quy ước không làm người xấu biến mất. Nhưng nó làm người tốt có chỗ đứng." }
+      ],
+      "next": "s37_midterm_turn"
+    },
+
+    {
+      "id": "s35_minh_shares",
+      "bg": "/vn/bg/classroom_2.png",
+      "lines": [
+        { "speaker": "minh", "emotion": "talk", "position": "center", "text": "Tớ từng nghĩ lỗi là do tớ." },
+        { "speaker": "minh", "emotion": "sad", "position": "center", "text": "Tớ cố cười… để mọi người thấy tớ ổn. Nhưng tối nào tớ cũng sợ mai tới lớp." },
+        { "speaker": "sensei", "emotion": "talk", "position": "right", "text": "Minh không có lỗi khi bị bắt nạt. Người gây ra mới chịu trách nhiệm." },
+        { "speaker": "narr", "text": "Nói ra là can đảm. Nhưng can đảm cần được đỡ bằng an toàn." }
+      ],
+      "next": "s37_midterm_turn"
+    },
+
+    {
+      "id": "s36_hung_response",
+      "bg": "/vn/bg/classroom_2.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Hùng. Em có muốn nói gì không?" },
+        { "speaker": "hung", "emotion": "talk", "position": "left", "text": "Em… không nghĩ mọi chuyện nghiêm trọng vậy." },
+        { "speaker": "nam", "emotion": "talk", "position": "right", "text": "Nhưng Minh mang nó. Và Minh vẫn phải đi học mỗi ngày." },
+        { "speaker": "narr", "text": "Nhiều tổn thương tồn tại vì người gây ra không thấy vết thương." }
+      ],
+      "next": "s37_midterm_turn"
+    },
+
+    {
+      "id": "s37_midterm_turn",
+      "bg": "/vn/bg/classroom.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Một thời gian trôi qua." },
+        { "speaker": "narr", "text": "Bạo lực đôi khi không quay lại bằng cú đấm. Nó quay lại bằng lời nói nhỏ như kim." },
+        { "speaker": "lan", "emotion": "worried", "position": "left", "text": "Nam… tớ nghe người ta thì thầm: 'Đừng chơi với Minh, phiền lắm'." },
+        { "speaker": "nam", "emotion": "worried", "position": "right", "text": "Vậy là chuyển sang bạo lực tinh thần." },
+        { "speaker": "narr", "text": "Và khi tinh thần bị bẻ, người ta không chảy máu. Người ta chỉ… tắt dần." }
+      ],
+      "choices": [
+        { "text": "Thu thập chứng cứ (nhân chứng, thời điểm, tin nhắn)", "effects": { "flags": { "savedEvidence": true }, "stats": { "truth": 2 } }, "next": "s38_collect_evidence_2" },
+        { "text": "Đối thoại riêng với Hùng (căng nhưng có thể mở nút)", "effects": { "stats": { "risk": 1, "truth": 1 } }, "next": "s39_private_confront" },
+        { "text": "Arc bạo lực mạng bùng lên (clip/ảnh bị lan)", "effects": { "stats": { "risk": 2 } }, "next": "s40_cyber_wave" }
+      ]
+    },
+
+    {
+      "id": "s38_collect_evidence_2",
+      "bg": "/vn/bg/lockers.jpg",
+      "lines": [
+        { "speaker": "narr", "text": "Tủ đồ. Nơi lời nói nhỏ nhất vang lâu nhất." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Ghi lại: ai nói, nói khi nào, ai nghe thấy." },
+        { "speaker": "lan", "emotion": "talk", "position": "right", "text": "Không bêu xấu. Không trả thù. Chỉ để cô có cơ sở bảo vệ Minh." },
+        { "speaker": "minh", "emotion": "sad", "position": "center", "text": "Tớ… không muốn làm phiền ai nữa." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Minh không phải 'phiền'. Minh là người." }
+      ],
+      "next": "s41_report_and_support"
+    },
+
+    {
+      "id": "s39_private_confront",
+      "bg": "/vn/bg/hanhlang.png",
+      "lines": [
+        { "speaker": "narr", "text": "Hành lang vắng. Những câu nói thật thường xuất hiện khi không có khán giả." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Hùng, cậu nói là dừng. Nhưng cậu vẫn làm Minh bị cô lập." },
+        { "speaker": "hung", "emotion": "talk", "position": "right", "text": "Tao chỉ nói sự thật. Nó phiền." },
+        { "speaker": "narr", "text": "Có người bắt nạt không bằng nắm đấm. Bằng việc gắn nhãn." }
+      ],
+      "choices": [
+        { "text": "Đặt ranh giới rõ + hậu quả (báo cô nếu tiếp tục)", "effects": { "stats": { "truth": 2, "risk": -1 }, "flags": { "talkedToSensei": true } }, "next": "s41_report_and_support" },
+        { "text": "Hỏi sâu: 'Vì sao cậu cần làm vậy?' (đào vào nỗi sợ)", "effects": { "stats": { "empathy": 2, "truth": 1 }, "flags": { "sawFlashbackHung": true } }, "next": "s42_hung_inner" }
+      ]
+    },
+
+    {
+      "id": "s42_hung_inner",
+      "bg": "/vn/bg/cautang.png",
+      "lines": [
+        { "speaker": "hung", "emotion": "talk", "position": "right", "text": "Nếu tao không 'giữ vị trí'… tao thành trò cười." },
+        { "speaker": "narr", "text": "Hùng sợ bị yếu. Và nỗi sợ đó biến thành dao." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Cậu đang tự nhốt mình trong vai 'kẻ mạnh'. Cậu không cần thế." },
+        { "speaker": "narr", "text": "Không phải ai nghe cũng đổi ngay. Nhưng một câu đúng có thể nằm lại trong họ." }
+      ],
+      "next": "s41_report_and_support"
+    },
+
+    {
+      "id": "s40_cyber_wave",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "narr", "text": "Arc: Bạo lực mạng." },
+        { "speaker": "narr", "text": "Một đoạn clip ngắn bị cắt khỏi ngữ cảnh lan đi nhanh hơn bất kỳ lời xin lỗi nào." },
+        { "speaker": "lan", "emotion": "worried", "position": "center", "text": "Nam… có người đăng chuyện của Minh như trò cười." },
+        { "speaker": "minh", "emotion": "sad", "position": "right", "text": "(Nội tâm) Tớ vừa thoát khỏi sân trường… lại bị kéo vào một sân khác." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Mình xử lý đúng cách: chặn, báo cáo, lưu bằng chứng, và báo cô." }
+      ],
+      "choices": [
+        { "text": "Chặn + báo cáo + lưu bằng chứng (chuẩn)", "effects": { "flags": { "cyberReported": true, "savedEvidence": true }, "stats": { "truth": 2 } }, "next": "s41_report_and_support" },
+        { "text": "Đối chất trong nhóm chat (dễ bùng nổ nhưng vẫn có câu chuyện)", "effects": { "stats": { "risk": 2, "truth": 1 } }, "next": "s43_chat_confront" }
+      ]
+    },
+
+    {
+      "id": "s43_chat_confront",
+      "bg": "/vn/bg/phonghochom.png",
+      "lines": [
+        { "speaker": "narr", "text": "Nam gõ chữ. Tay run. Nhưng vẫn gõ." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Dừng lại. Đây là bạo lực mạng. Đừng biến nỗi đau thành trò." },
+        { "speaker": "narr", "text": "Tin nhắn được seen. Im lặng kéo dài." },
+        { "speaker": "narr", "text": "Rồi một người nhắn: 'Xin lỗi'. Một người khác xóa bài." },
+        { "speaker": "narr", "text": "Nhưng vẫn có người hùa theo… vì sợ bị tách khỏi nhóm." }
+      ],
+      "next": "s41_report_and_support"
+    },
+
+    {
+      "id": "s41_report_and_support",
+      "bg": "/vn/bg/cuaphonghocnhom.png",
+      "lines": [
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Cô ghi nhận. Cô sẽ làm việc với phụ huynh và có biện pháp giám sát." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Nhưng cô muốn các em nhớ: chăm nạn nhân là một phần của giải pháp." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Em… muốn thử lại. Không phải để quên… mà để sống tiếp." },
+        { "speaker": "narr", "text": "Có những chiến thắng không ồn ào: một ngày đi học mà không sợ." }
+      ],
+      "choices": [
+        { "text": "Kết thúc: Chữa lành sâu (ý nghĩa, ấm)", "next": "s50_ending_deep_healing" },
+        { "text": "Kết thúc: Ranh giới & an toàn (thực tế)", "next": "s51_ending_safe_boundaries" },
+        { "text": "Kết thúc: Người chứng kiến (thông điệp mạnh)", "next": "s52_ending_bystander" }
+      ]
+    },
+
+    {
+      "id": "s50_ending_deep_healing",
+      "bg": "/vn/bg/santhuong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Kết thúc: Chữa lành sâu." },
+        { "speaker": "narr", "text": "Chữa lành không phải quên. Chữa lành là nhớ mà không còn bị nhấn chìm." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Trước đây tớ nghĩ tớ đáng bị vậy. Bây giờ… tớ biết tớ không đáng." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tớ học được: dũng cảm không phải gào to. Là đứng lại khi bản năng muốn bỏ chạy." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Tớ học được: một câu lên tiếng đúng lúc… có thể cứu ai đó khỏi cảm giác không còn là người." },
+        { "speaker": "sensei", "emotion": "talk", "position": "center", "text": "Và cô học được: lắng nghe sớm hơn, tin học trò nhiều hơn." },
+        { "speaker": "narr", "text": "Bài học: Thấy bạo lực — tìm đồng minh, báo người lớn tin cậy, lưu bằng chứng khi cần, và đừng để nạn nhân một mình." }
+      ],
+      "end": true
+    },
+
+    {
+      "id": "s51_ending_safe_boundaries",
+      "bg": "/vn/bg/santhuong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Kết thúc: Ranh giới & an toàn." },
+        { "speaker": "narr", "text": "Không phải lúc nào cũng có hòa giải. Có lúc điều đúng nhất là rời khỏi vùng nguy hiểm và giữ an toàn." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Tớ chưa thể tha thứ. Nhưng tớ có quyền đặt ranh giới." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Giúp ai đó không phải bắt họ 'mạnh lên'. Là giúp họ được an toàn trước." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Và nếu sợ… vẫn có thể làm điều nhỏ: gọi cô, đứng cạnh, không để người ta một mình." },
+        { "speaker": "narr", "text": "Bài học: Không tự xử. Không đối đầu một mình. Ưu tiên an toàn, quy trình, và sự hỗ trợ." }
+      ],
+      "end": true
+    },
+
+    {
+      "id": "s52_ending_bystander",
+      "bg": "/vn/bg/santhuong.png",
+      "lines": [
+        { "speaker": "narr", "text": "Kết thúc: Người chứng kiến." },
+        { "speaker": "narr", "text": "Người chứng kiến không trung lập. Người chứng kiến luôn ở một phía." },
+        { "speaker": "lan", "emotion": "talk", "position": "center", "text": "Ngày trước tớ nghĩ: im là an toàn. Giờ tớ hiểu: im đôi khi là đồng lõa." },
+        { "speaker": "nam", "emotion": "talk", "position": "left", "text": "Tớ không muốn làm người tốt trong tưởng tượng. Tớ muốn làm người tốt trong đời thật." },
+        { "speaker": "minh", "emotion": "talk", "position": "right", "text": "Chỉ cần một người đứng cạnh… đã đủ làm tớ tin: tớ không đáng bị biến thành trò." },
+        { "speaker": "narr", "text": "Bài học: Can thiệp đúng cách không cần bạo lực. Cần trách nhiệm, bằng chứng, và một câu: 'Mình ở đây'." }
+      ],
+      "end": true
+    }
+  ]
+}
